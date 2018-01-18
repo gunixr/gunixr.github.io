@@ -1,1 +1,10 @@
-
+<script>
+  test = {
+    testCall: function() {
+      console.log(arguments.callee.name);
+    }
+  };
+   $(document).ready(function () {
+     test.testCall();
+   });
+</script>
